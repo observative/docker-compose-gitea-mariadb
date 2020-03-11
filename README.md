@@ -1,12 +1,12 @@
 # Docker gitea mariadb 
-## [Gogs](https://gogs.io/) is a painless self-hosted Git service
+## [Gitea](https://gitea.io/) is a painless self-hosted Git service
 
 ### Getting started
 
 1. Clone project :
 
     ```sh
-    git clone https://github.com/rgarofalo/docker-gitea-mariadb
+    git clone https://github.com/observative/docker-gitea-mariadb
     ```
 
 2. You could customize your settings before installation :
