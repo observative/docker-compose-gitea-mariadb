@@ -13,6 +13,8 @@ services:
           - MYSQL_PASSWORD=${GITEA_MYSQL_PASSWORD}
       volumes:
           - gitea-data:/var/lib/mysql
+      networks:
+          - my-network
     
     gitea-app:
       image: gitea/gitea
@@ -33,14 +35,11 @@ services:
         - gitea-db
 
 volumes:
-  gogs-data:
-    driver: local
-    name: gogs-data
   gitea-data:
     driver: local
     name: gitea-db
 
 networks:
-    default:
+    my-network:
        external:
          name: nginx-proxy
